@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 364
+  ClientHeight = 434
   ClientWidth = 718
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -31,6 +31,20 @@ object Form1: TForm1
     Proportional = True
     Stretch = True
   end
+  object Label1: TLabel
+    Left = 8
+    Top = 358
+    Width = 34
+    Height = 15
+    Caption = 'Label1'
+  end
+  object Label2: TLabel
+    Left = 360
+    Top = 358
+    Width = 34
+    Height = 15
+    Caption = 'Label2'
+  end
   object rgAnim: TRadioGroup
     Left = 8
     Top = 8
@@ -46,6 +60,22 @@ object Form1: TForm1
     ParentDoubleBuffered = False
     TabOrder = 0
     OnClick = rgAnimClick
+  end
+  object tbFrame: TTrackBar
+    Left = 360
+    Top = 381
+    Width = 292
+    Height = 45
+    TabOrder = 1
+    OnChange = tbFrameChange
+  end
+  object tbGif: TTrackBar
+    Left = 8
+    Top = 381
+    Width = 305
+    Height = 45
+    TabOrder = 2
+    OnChange = tbGifChange
   end
   object imgList: TImageList
     Height = 109
